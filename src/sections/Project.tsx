@@ -87,9 +87,9 @@ const Project = ({ project }: Props) => {
                     width: "100%",
                     cursor: "pointer",
                     aspectRatio: "4 / 1",
-                    "--yarl__color_button": "var(--foreground)",
-                    "--yarl__color_button_hover": "var(--foreground)",
-                    "--yarl__color_button_active": "var(--foreground)",
+                    "--yarl__color_button": "#fff",
+                    "--yarl__color_button_hover": "#fff",
+                    "--yarl__color_button_active": "#fff",
                   } as React.CSSProperties,
                 }}
               />
@@ -108,9 +108,9 @@ const Project = ({ project }: Props) => {
                 }}
                 styles={{
                   container: {
-                    "--yarl__color_button": "var(--foreground)",
-                    "--yarl__color_button_hover": "var(--foreground)",
-                    "--yarl__color_button_active": "var(--foreground)",
+                    "--yarl__color_button": "#fff",
+                    "--yarl__color_button_hover": "#fff",
+                    "--yarl__color_button_active": "#fff",
                   } as Record<string, any>,
                 }}
               />

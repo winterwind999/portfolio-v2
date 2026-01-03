@@ -67,16 +67,16 @@ const Profile = () => {
         <p>Software Engineer</p>
 
         <div
-          className="flex cursor-pointer items-center gap-1 text-green-600 dark:text-green-400"
+          className="mb-2 flex cursor-pointer items-center gap-1 text-green-600 dark:text-green-400"
           onClick={handleReachOut}
         >
           <p className="text-xl">•</p>
           <div className="relative cursor-pointer overflow-hidden">
             <div className="group">
-              <p className="ease-slow flex flex-col transition-all duration-1000 group-hover:-translate-y-full">
+              <p className="ease-slow flex flex-col border-b-2 border-dashed border-green-600 transition-all duration-1000 group-hover:-translate-y-full dark:border-green-400">
                 Available for work
               </p>
-              <div className="ease-slow absolute top-full flex items-center justify-center gap-1 transition-all duration-1000 group-hover:-translate-y-full">
+              <div className="ease-slow absolute top-full flex items-center justify-center gap-1 border-b-2 border-dashed border-green-600 transition-all duration-1000 group-hover:-translate-y-full dark:border-green-400">
                 <p>Reach out</p> <MailIcon className="size-3.5" />
               </div>
             </div>
