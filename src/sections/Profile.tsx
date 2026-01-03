@@ -55,9 +55,14 @@ const Profile = () => {
       </div>
 
       <div className="col-span-7 flex flex-col gap-1 md:col-span-10">
-        <p className="text-xl font-semibold">
-          Hi, I'm Jordan <span className="wave">👋</span>
-        </p>
+        <div className="flex items-center gap-2 text-2xl font-semibold">
+          <p>Jordan Faciol</p>
+          <img
+            src="https://img.icons8.com/color/48/verified-badge.png"
+            alt="verified-badge"
+            className="size-4"
+          />
+        </div>
 
         <p>Software Engineer</p>
 

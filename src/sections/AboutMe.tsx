@@ -16,16 +16,14 @@ const AboutMe = () => {
         </CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-3">
-        <p className="text-justify">
-          I transform complex problems into simple and elegant solutions.
-        </p>
-        <p className="text-justify">
+        <p>I transform complex problems into simple and elegant solutions.</p>
+        <p>
           As a software engineer, I prioritize high-quality UI/UX, robust
           security, and the delivery of scalable applications. I take pride in
           meeting project timelines while always learning better ways to improve
           my technical craft.
         </p>
-        <p className="text-justify">
+        <p>
           I’m looking for opportunities to join a team, learn from experienced
           developers, and work on real-world projects. My focus is on writing
           clean, maintainable code and building user-friendly solutions that

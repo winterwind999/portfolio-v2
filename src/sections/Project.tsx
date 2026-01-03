@@ -29,9 +29,9 @@ const Project = ({ project }: Props) => {
   return (
     <Card>
       <CardHeader>
-        <div>
+        <div className="flex flex-col gap-2">
           <CardTitle>{project.title}</CardTitle>
-          <p className="text-justify text-sm">{project.description}</p>
+          <p className="text-sm">{project.description}</p>
         </div>
       </CardHeader>
       <CardContent>
@@ -87,9 +87,9 @@ const Project = ({ project }: Props) => {
                     width: "100%",
                     cursor: "pointer",
                     aspectRatio: "4 / 1",
-                    "--yarl__color_button": "var(--primary-foreground)",
-                    "--yarl__color_button_hover": "var(--primary-foreground)",
-                    "--yarl__color_button_active": "var(--primary-foreground)",
+                    "--yarl__color_button": "var(--foreground)",
+                    "--yarl__color_button_hover": "var(--foreground)",
+                    "--yarl__color_button_active": "var(--foreground)",
                   } as React.CSSProperties,
                 }}
               />
@@ -108,9 +108,9 @@ const Project = ({ project }: Props) => {
                 }}
                 styles={{
                   container: {
-                    "--yarl__color_button": "var(--primary-foreground)",
-                    "--yarl__color_button_hover": "var(--primary-foreground)",
-                    "--yarl__color_button_active": "var(--primary-foreground)",
+                    "--yarl__color_button": "var(--foreground)",
+                    "--yarl__color_button_hover": "var(--foreground)",
+                    "--yarl__color_button_active": "var(--foreground)",
                   } as Record<string, any>,
                 }}
               />
@@ -119,9 +119,7 @@ const Project = ({ project }: Props) => {
 
           <ul className="ml-6 list-disc">
             {project.highlights.map((highlight) => (
-              <li key={highlight} className="text-justify">
-                {highlight}
-              </li>
+              <li key={highlight}>{highlight}</li>
             ))}
           </ul>
         </div>

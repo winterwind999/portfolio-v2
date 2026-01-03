@@ -57,7 +57,7 @@ const Timeline = () => {
                 />
                 <div className="w-full">
                   <Label htmlFor={path.title}>{path.title}</Label>
-                  <div className="flex justify-between">
+                  <div className="flex flex-wrap justify-between">
                     <p className="text-sm">{path.company}</p>
                     <Badge variant="secondary">{path.year}</Badge>
                   </div>
