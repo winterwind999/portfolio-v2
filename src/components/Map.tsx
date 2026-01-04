@@ -7,7 +7,9 @@ import { useTheme } from "./theme-provider";
 
 const Map = () => {
   const { theme } = useTheme();
+
   const mapContainer = useRef<HTMLDivElement | null>(null);
+
   const markerLngLat: [number, number] = [
     121.03772612886411, 14.671060795700212,
   ];
@@ -16,6 +18,7 @@ const Map = () => {
     if (!mapContainer.current) {
       return;
     }
+
     const map = new maplibregl.Map({
       container: mapContainer.current,
       style:
@@ -77,6 +80,10 @@ const Map = () => {
           </motion.div>,
         );
       });
+    });
+
+    map.on("error", (e) => {
+      console.error("Map error:", e);
     });
 
     return () => map.remove();
