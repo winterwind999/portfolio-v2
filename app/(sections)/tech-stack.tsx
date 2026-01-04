@@ -4,6 +4,8 @@ import {
   ANGULAR,
   AWS,
   AXIOS,
+  CHATGPT,
+  CLAUDE,
   CLOUDINARY,
   CSS,
   DOCKER,
@@ -12,6 +14,7 @@ import {
   GIT,
   GITHUB,
   GITHUB_ACTIONS,
+  GOOGLE_GEMINI,
   GRAPHQL,
   HTML,
   JAVA,
@@ -36,6 +39,7 @@ import {
   TAILWINDCSS,
   TANSTACK_QUERY,
   TYPESCRIPT,
+  VERCEL,
   VSCODE,
   ZUSTAND,
 } from "@/components/icons";
@@ -90,7 +94,19 @@ export default function TechStack() {
 
     {
       title: "DevOps & Cloud",
-      items: [AWS, DOCKER, GITHUB_ACTIONS, RENDER(theme), CLOUDINARY],
+      items: [
+        AWS,
+        DOCKER,
+        GITHUB_ACTIONS,
+        RENDER(theme),
+        VERCEL(theme),
+        CLOUDINARY,
+      ],
+    },
+
+    {
+      title: "AI",
+      items: [CLAUDE, GOOGLE_GEMINI, CHATGPT(theme)],
     },
 
     {

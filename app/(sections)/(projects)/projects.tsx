@@ -4,6 +4,7 @@ import {
   EXPRESSJS,
   FLUTTER,
   GITHUB_ACTIONS,
+  GOOGLE_GEMINI,
   MONGODB,
   NESTJS,
   NEXTJS,
@@ -24,6 +25,35 @@ export default function Projects() {
   const { theme } = useTheme();
 
   const PROJECTS: Project[] = [
+    {
+      title: "Portfolio",
+      description:
+        "A modern, interactive portfolio showcasing my work as a Software Engineer.",
+      tools: [TYPESCRIPT, NEXTJS(theme), TAILWINDCSS, GOOGLE_GEMINI],
+      links: [
+        {
+          type: "github",
+          title: "Sourcecode",
+          link: "https://github.com/winterwind999/portfolio-v2",
+        },
+        {
+          type: "website",
+          title: "jordan-faciol.vercel.app",
+          link: "https://jordan-faciol.vercel.app/",
+        },
+      ],
+      images: [
+        {
+          title: "portfolio",
+          src: "/assets/projects/portfolio/portfolio.webp",
+        },
+      ],
+      highlights: [
+        "Presents my tech stack, work experience, projects, resume, and personal background in a clean layout.",
+        "Integrated a custom AI chatbot using Google Gemini for interactive profile exploration.",
+      ],
+    },
+
     {
       title: "Matchy",
       description:
@@ -49,13 +79,13 @@ export default function Projects() {
       images: [
         {
           title: "landing",
-          src: "assets/projects/matchy/landing.webp",
+          src: "/assets/projects/matchy/landing.webp",
         },
-        { title: "feeds", src: "assets/projects/matchy/feeds.webp" },
-        { title: "chats", src: "assets/projects/matchy/chats.webp" },
+        { title: "feeds", src: "/assets/projects/matchy/feeds.webp" },
+        { title: "chats", src: "/assets/projects/matchy/chats.webp" },
         {
           title: "profile",
-          src: "assets/projects/matchy/profile.webp",
+          src: "/assets/projects/matchy/profile.webp",
         },
       ],
       highlights: [
@@ -79,43 +109,43 @@ export default function Projects() {
       images: [
         {
           title: "landing",
-          src: "assets/projects/web-mediqueue/landing.webp",
+          src: "/assets/projects/web-mediqueue/landing.webp",
         },
         {
           title: "about",
-          src: "assets/projects/web-mediqueue/about.webp",
+          src: "/assets/projects/web-mediqueue/about.webp",
         },
         {
           title: "dashboard",
-          src: "assets/projects/web-mediqueue/dashboard.webp",
+          src: "/assets/projects/web-mediqueue/dashboard.webp",
         },
         {
           title: "tickets",
-          src: "assets/projects/web-mediqueue/tickets.webp",
+          src: "/assets/projects/web-mediqueue/tickets.webp",
         },
         {
           title: "appointments",
-          src: "assets/projects/web-mediqueue/appointments.webp",
+          src: "/assets/projects/web-mediqueue/appointments.webp",
         },
         {
           title: "queues",
-          src: "assets/projects/web-mediqueue/queues.webp",
+          src: "/assets/projects/web-mediqueue/queues.webp",
         },
         {
           title: "monitor-queues",
-          src: "assets/projects/web-mediqueue/monitor-queues.webp",
+          src: "/assets/projects/web-mediqueue/monitor-queues.webp",
         },
         {
           title: "descriptive-analytics",
-          src: "assets/projects/web-mediqueue/descriptive-analytics.webp",
+          src: "/assets/projects/web-mediqueue/descriptive-analytics.webp",
         },
         {
           title: "archives",
-          src: "assets/projects/web-mediqueue/archives.webp",
+          src: "/assets/projects/web-mediqueue/archives.webp",
         },
         {
           title: "clinics",
-          src: "assets/projects/web-mediqueue/clinics.webp",
+          src: "/assets/projects/web-mediqueue/clinics.webp",
         },
       ],
       highlights: [
@@ -138,27 +168,27 @@ export default function Projects() {
       images: [
         {
           title: "login",
-          src: "assets/projects/mobile-mediqueue/login.webp",
+          src: "/assets/projects/mobile-mediqueue/login.webp",
         },
         {
           title: "home",
-          src: "assets/projects/mobile-mediqueue/home.webp",
+          src: "/assets/projects/mobile-mediqueue/home.webp",
         },
         {
           title: "appointment-booking",
-          src: "assets/projects/mobile-mediqueue/appointment-booking.webp",
+          src: "/assets/projects/mobile-mediqueue/appointment-booking.webp",
         },
         {
           title: "appointment-details",
-          src: "assets/projects/mobile-mediqueue/appointment-details.webp",
+          src: "/assets/projects/mobile-mediqueue/appointment-details.webp",
         },
         {
           title: "notifications",
-          src: "assets/projects/mobile-mediqueue/notifications.webp",
+          src: "/assets/projects/mobile-mediqueue/notifications.webp",
         },
         {
           title: "profile",
-          src: "assets/projects/mobile-mediqueue/profile.webp",
+          src: "/assets/projects/mobile-mediqueue/profile.webp",
         },
       ],
       highlights: [

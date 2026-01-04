@@ -75,14 +75,14 @@ export default function ChatBot() {
     <div className="fixed right-6 bottom-6.5 z-50">
       <Popover open={open} onOpenChange={onOpenChange}>
         <PopoverTrigger asChild>
-          <Button type="button" variant="default" aria-label="open-chat-bot">
+          <Button type="button" variant="default" aria-label="open-chatbot">
             <MessageCircleMoreIcon /> Chat with Jordan
           </Button>
         </PopoverTrigger>
         <PopoverContent
           align="end"
           sideOffset={8}
-          className="flex h-150 w-100 flex-col p-0"
+          className="flex h-150 w-[calc(100vw-32px)] flex-col p-0 sm:w-100"
         >
           <div className="flex items-center justify-between gap-2 p-3">
             <div className="flex items-center gap-2">
@@ -105,7 +105,7 @@ export default function ChatBot() {
 
             <button
               type="button"
-              aria-label="close-chat-bot"
+              aria-label="close-chatbot"
               onClick={() => onOpenChange(false)}
             >
               <XIcon />
@@ -151,7 +151,10 @@ export default function ChatBot() {
 
           <hr />
 
-          <form className="flex items-center gap-2 p-3" onSubmit={sendMessage}>
+          <form
+            className="flex w-full items-center gap-2 p-3"
+            onSubmit={sendMessage}
+          >
             <Input
               type="text"
               value={input}

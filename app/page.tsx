@@ -1,6 +1,6 @@
 "use client";
 
-import ChatBot from "@/components/chat-bot";
+import ChatBot from "@/components/chatbot";
 import FloatingActionButton from "@/components/floating-action-button";
 import Map from "@/components/map";
 import { motion, Variants } from "framer-motion";

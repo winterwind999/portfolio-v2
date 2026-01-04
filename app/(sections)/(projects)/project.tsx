@@ -67,7 +67,14 @@ export default function Project({ project }: Props) {
           {project.links.length > 0 && (
             <div className="flex flex-wrap items-center gap-3">
               {project.links.map((link) => (
-                <Button key={link.title} type="button" variant="link">
+                <Button
+                  key={link.title}
+                  type="button"
+                  variant="link"
+                  onClick={() => {
+                    window.open(link.link, "_blank", "noopener,noreferrer");
+                  }}
+                >
                   {link.type === "github" ? (
                     <GITHUB_SVG className="fill-primary" />
                   ) : (
