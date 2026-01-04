@@ -2,7 +2,8 @@
 
 ## Built with
 
-- React
+- Next.js
 - Typescript
 - Tailwind CSS
 - shadcn/ui
+- Gemini AI for Chat Bot
