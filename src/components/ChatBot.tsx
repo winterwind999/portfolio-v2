@@ -49,7 +49,12 @@ const ChatBot = () => {
         body: JSON.stringify({ message: input }),
       });
 
+      console.log("res ", res);
+
       const data = await res.json();
+
+      console.log("data ", data);
+
       const reply =
         data?.reply || "I am sorry I am unable to reply to your message";
 
@@ -134,7 +139,7 @@ const ChatBot = () => {
                 </div>
               );
             })}
-            <div ref={chatEndRef}>{isLoading ? <p>Thinking...</p> : null}</div>
+            <div ref={chatEndRef}>{isLoading && <p>Thinking...</p>}</div>
           </div>
 
           <hr />
