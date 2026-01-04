@@ -82,7 +82,7 @@ export default function ChatBot() {
         <PopoverContent
           align="end"
           sideOffset={8}
-          className="flex h-120 w-80 flex-col p-0"
+          className="flex h-150 w-100 flex-col p-0"
         >
           <div className="flex items-center justify-between gap-2 p-3">
             <div className="flex items-center gap-2">
@@ -131,7 +131,7 @@ export default function ChatBot() {
                       <p className="text-sm">Jordan Faciol</p>
                     </div>
 
-                    <p className="bg-secondary text-secondary-foreground max-w-[70%] rounded-xl p-3 wrap-break-word">
+                    <p className="bg-secondary text-secondary-foreground max-w-[80%] rounded-xl p-3 text-sm wrap-break-word">
                       {message.text}
                     </p>
                   </div>
@@ -140,7 +140,7 @@ export default function ChatBot() {
 
               return (
                 <div key={i} className="flex justify-end">
-                  <p className="bg-primary text-primary-foreground max-w-[70%] rounded-xl p-3 wrap-break-word">
+                  <p className="bg-primary text-primary-foreground max-w-[80%] rounded-xl p-3 text-sm wrap-break-word">
                     {message.text}
                   </p>
                 </div>
