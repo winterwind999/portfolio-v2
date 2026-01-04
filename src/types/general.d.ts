@@ -29,3 +29,9 @@ type Project = {
   images: { title: string; src: string }[];
   highlights: string[];
 };
+
+// ChatBot
+type Message = {
+  sender: "user" | "gemini";
+  text: string;
+};

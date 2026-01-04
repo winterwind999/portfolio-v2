@@ -1,4 +1,5 @@
 import { motion, type Variants } from "framer-motion";
+import ChatBot from "./components/ChatBot";
 import FloatingActionButton from "./components/FloatingActionButton";
 import Map from "./components/Map";
 import AboutMe from "./sections/AboutMe";
@@ -81,6 +82,7 @@ const App = () => {
           <Footer />
         </motion.div>
 
+        <ChatBot />
         <FloatingActionButton />
       </motion.div>
     </div>

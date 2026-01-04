@@ -83,7 +83,7 @@ const Map = () => {
     });
 
     map.on("error", (e) => {
-      console.error("Map error:", e);
+      console.error("Map Error: ", e);
     });
 
     return () => map.remove();

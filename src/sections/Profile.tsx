@@ -70,7 +70,7 @@ const Profile = () => {
           className="mb-2 flex cursor-pointer items-center gap-1 text-green-600 dark:text-green-400"
           onClick={handleReachOut}
         >
-          <p className="text-xl">•</p>
+          <span className="rounded-full bg-green-600 p-0.5 dark:bg-green-400"></span>
           <div className="relative cursor-pointer overflow-hidden">
             <div className="group">
               <p className="ease-slow flex flex-col border-b-2 border-dashed border-green-600 transition-all duration-1000 group-hover:-translate-y-full dark:border-green-400">
