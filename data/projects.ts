@@ -31,8 +31,8 @@ export const PROJECTS = (theme: Theme): Project[] => [
       },
       {
         type: "website",
-        title: "jordan-faciol.vercel.app",
-        link: "https://jordan-faciol.vercel.app/",
+        title: "jordanfaciol.vercel.app",
+        link: "https://jordanfaciol.vercel.app/",
       },
     ],
     images: [
