@@ -16,12 +16,14 @@ export default function ChatBot() {
     },
   ]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isDisabled, setIsDisabled] = useState(false);
 
   const [open, setOpen] = useState<boolean>(false);
 
   const onOpenChange = (open: boolean) => setOpen(open);
 
   const chatEndRef = useRef<HTMLDivElement | null>(null);
+  const inputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
     const scrollToBottom = () => {
@@ -31,10 +33,16 @@ export default function ChatBot() {
     scrollToBottom();
   }, [messages]);
 
+  useEffect(() => {
+    if (!isLoading && open) {
+      inputRef.current?.focus();
+    }
+  }, [isLoading, open]);
+
   const sendMessage = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!input.trim()) {
+    if (!input.trim() || isDisabled) {
       return;
     }
 
@@ -52,11 +60,11 @@ export default function ChatBot() {
         body: JSON.stringify({ message: input }),
       });
 
-      console.log("res ", res);
+      if (!res.ok) {
+        throw new Error("AI_UNAVAILABLE");
+      }
 
       const data = await res.json();
-
-      console.log("data ", data);
 
       const reply =
         data?.reply || "I am sorry I am unable to reply to your message";
@@ -64,9 +72,16 @@ export default function ChatBot() {
       const geminiMessage: Message = { sender: "gemini", text: reply };
 
       setMessages((prev) => [...prev, geminiMessage]);
-      setIsLoading(false);
     } catch (error) {
-      console.error("ChatBot Error: ", error);
+      setMessages((prev) => [
+        ...prev,
+        {
+          sender: "gemini",
+          text: "I apologize, but my AI assistant is currently at its capacity. Please feel free to reach out to me directly or check back later!",
+        },
+      ]);
+      setIsDisabled(true);
+    } finally {
       setIsLoading(false);
     }
   };
@@ -97,8 +112,10 @@ export default function ChatBot() {
               <div>
                 <p className="font-semibold">Chat with Jordan</p>
                 <div className="flex items-center gap-2">
-                  <span className="rounded-full bg-green-400 p-1"></span>
-                  <p className="text-sm">Online</p>
+                  <span
+                    className={`${isDisabled ? "bg-red-500" : "bg-green-400"} rounded-full p-1`}
+                  ></span>
+                  <p className="text-sm">{isDisabled ? "Offline" : "Online"}</p>
                 </div>
               </div>
             </div>
@@ -156,17 +173,20 @@ export default function ChatBot() {
             onSubmit={sendMessage}
           >
             <Input
+              ref={inputRef}
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Type your message..."
-              disabled={isLoading}
+              autoFocus
+              disabled={isLoading || isDisabled}
             />
+
             <Button
               type="submit"
               variant="default"
               aria-label="send"
-              disabled={isLoading}
+              disabled={isLoading || isDisabled}
             >
               {isLoading ? "..." : <ArrowRightIcon />}
             </Button>
