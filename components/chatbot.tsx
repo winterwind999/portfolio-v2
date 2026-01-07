@@ -4,8 +4,8 @@ import { ArrowRightIcon, MessageCircleMoreIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { Button } from "./ui/button";
-import { Input } from "./ui/input";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
+import { Textarea } from "./ui/textarea";
 
 export default function ChatBot() {
   const [input, setInput] = useState<string>("");
@@ -23,7 +23,7 @@ export default function ChatBot() {
   const onOpenChange = (open: boolean) => setOpen(open);
 
   const chatEndRef = useRef<HTMLDivElement | null>(null);
-  const inputRef = useRef<HTMLInputElement | null>(null);
+  const inputRef = useRef<HTMLTextAreaElement | null>(null);
 
   useEffect(() => {
     const scrollToBottom = () => {
@@ -148,7 +148,7 @@ export default function ChatBot() {
                       <p className="text-sm">Jordan Faciol</p>
                     </div>
 
-                    <p className="bg-secondary text-secondary-foreground max-w-[80%] rounded-xl p-3 text-sm wrap-break-word">
+                    <p className="bg-secondary text-secondary-foreground max-w-[80%] rounded-xl p-3 text-sm wrap-break-word whitespace-pre-wrap">
                       {message.text}
                     </p>
                   </div>
@@ -157,7 +157,7 @@ export default function ChatBot() {
 
               return (
                 <div key={i} className="flex justify-end">
-                  <p className="bg-primary text-primary-foreground max-w-[80%] rounded-xl p-3 text-sm wrap-break-word">
+                  <p className="bg-primary text-primary-foreground max-w-[80%] rounded-xl p-3 text-sm wrap-break-word whitespace-pre-wrap">
                     {message.text}
                   </p>
                 </div>
@@ -172,12 +172,18 @@ export default function ChatBot() {
             className="flex w-full items-center gap-2 p-3"
             onSubmit={sendMessage}
           >
-            <Input
+            <Textarea
               ref={inputRef}
-              type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Type your message..."
+              className="max-h-14 min-h-5 resize-none"
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && !e.shiftKey) {
+                  e.preventDefault();
+                  sendMessage(e);
+                }
+              }}
               autoFocus
               disabled={isLoading || isDisabled}
             />
