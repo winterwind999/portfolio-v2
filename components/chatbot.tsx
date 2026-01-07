@@ -148,7 +148,7 @@ export default function ChatBot() {
                       <p className="text-sm">Jordan Faciol</p>
                     </div>
 
-                    <p className="bg-secondary text-secondary-foreground max-w-[80%] rounded-xl p-3 text-sm wrap-break-word whitespace-pre-wrap">
+                    <p className="bg-secondary text-secondary-foreground max-w-[80%] rounded-xl p-3 text-sm wrap-anywhere whitespace-pre-wrap">
                       {message.text}
                     </p>
                   </div>
@@ -157,7 +157,7 @@ export default function ChatBot() {
 
               return (
                 <div key={i} className="flex justify-end">
-                  <p className="bg-primary text-primary-foreground max-w-[80%] rounded-xl p-3 text-sm wrap-break-word whitespace-pre-wrap">
+                  <p className="bg-primary text-primary-foreground max-w-[80%] rounded-xl p-3 text-sm wrap-anywhere whitespace-pre-wrap">
                     {message.text}
                   </p>
                 </div>
