@@ -96,7 +96,7 @@ export const PROJECTS = (theme: Theme): Project[] => [
   {
     title: "Web Application of Patient Workflow System",
     description:
-      "MediQueue is a Patient Workflow System is a system that includes both a mobile and web application. It aims to simplify and improve patient data processing and care delivery",
+      "MediQueue is a Patient Workflow System that includes both a mobile and web application. It aims to simplify and improve patient data processing and care delivery",
     tools: [REACT, REDUX, NODEJS, EXPRESSJS(theme), MONGODB],
     links: [],
     images: [
@@ -155,7 +155,7 @@ export const PROJECTS = (theme: Theme): Project[] => [
   {
     title: "Mobile Application of Patient Workflow System",
     description:
-      "MediQueue is a Patient Workflow System is a system that includes both a mobile and web application. It aims to simplify and improve patient data processing and care delivery",
+      "MediQueue is a Patient Workflow System that includes both a mobile and web application. It aims to simplify and improve patient data processing and care delivery",
     tools: [FLUTTER, NODEJS, EXPRESSJS(theme), MONGODB],
     links: [],
     images: [
