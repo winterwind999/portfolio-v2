@@ -12,6 +12,7 @@ import {
   REACT,
   REDUX,
   RENDER,
+  SOCKETIO,
   TAILWINDCSS,
   TYPESCRIPT,
   ZUSTAND,
@@ -42,7 +43,6 @@ export const PROJECTS = (theme: Theme): Project[] => [
       },
     ],
     highlights: [
-      "Presents my tech stack, work experience, projects, resume, and personal background in a clean layout",
       "Integrated a custom AI chatbot using Google Gemini for interactive profile exploration",
     ],
   },
@@ -50,7 +50,7 @@ export const PROJECTS = (theme: Theme): Project[] => [
   {
     title: "Matchy",
     description:
-      "Matchy is a full-stack dating application built to deliver a smooth, real-time, and secure user experience; from browsing profiles to chatting live",
+      "A real time full stack dating application with secure live chat and matchmaking.",
     tools: [
       TYPESCRIPT,
       NEXTJS(theme),
@@ -63,6 +63,7 @@ export const PROJECTS = (theme: Theme): Project[] => [
       DOCKER,
       RENDER(theme),
       CLOUDINARY,
+      SOCKETIO(theme),
     ],
     links: [
       { type: "github", title: "Frontend", link: "" },
@@ -147,8 +148,6 @@ export const PROJECTS = (theme: Theme): Project[] => [
       "Implemented OTP-based recovery for email address and mobile number",
       "Automated deployments using CI/CD pipelines using GitHub Actions",
       "Designed a descriptive analytics module with Chart.js for data visualization and PDF/Excel report generation",
-      "Created a cross-platform mobile app with Flutter frontend and Node.js, Express.js, and MongoDB backend",
-      "Implemented real-time data synchronization using Socket.io for web and Server-Sent Events (SSE) for mobile application",
     ],
   },
 

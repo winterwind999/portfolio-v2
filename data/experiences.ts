@@ -10,7 +10,7 @@ export const EXPERIENCES: Experience[] = [
         descriptions: [
           "A web-based system designed to streamline the management of APE, PEME, Executive, and Diagnostic medical examinations",
           "Built with Typescript, React, Node.js, Express.js, MySQL, Tailwind CSS, TanStack Query, Axios, Zustand, REST API, and Socket.io",
-          "Key features include pre-filled PDF generation, CSV parsing, notifications, data analytics, a dynamic form builder, data versioning, and file encryption, decryption, viewing, and upload to Cloudinary",
+          "Key features include pre-filled PDF generation, CSV parsing, notifications, data analytics, a dynamic form builder, data versioning, file encryption/decryption, viewing and uploading to Cloudinary",
         ],
       },
       {

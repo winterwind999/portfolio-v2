@@ -183,6 +183,11 @@ export const CLOUDINARY: Tool = {
 };
 
 // AI
+export const CLAUDE_CODE: Tool = {
+  title: "Claude Code",
+  icon: "https://cdn.simpleicons.org/claude",
+};
+
 export const GOOGLE_GEMINI: Tool = {
   title: "Google Gemini",
   icon: "https://cdn.simpleicons.org/googlegemini",
@@ -195,11 +200,6 @@ export const CHATGPT = (theme: Theme): Tool => ({
       ? "https://img.icons8.com/?size=100&id=FBO05Dys9QCg&format=png&color=000000"
       : "https://img.icons8.com/?size=100&id=FBO05Dys9QCg&format=png&color=ffffff",
 });
-
-export const CLAUDE: Tool = {
-  title: "Claude",
-  icon: "https://cdn.simpleicons.org/claude",
-};
 
 // DEVELOPER TOOLS
 export const GIT: Tool = {
