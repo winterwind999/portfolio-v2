@@ -50,7 +50,7 @@ export const ZUSTAND: Tool = {
 };
 
 export const TANSTACK_QUERY = (theme: Theme): Tool => ({
-  title: "Tanstack Query",
+  title: "TanStack Query",
   icon:
     theme === "light"
       ? "https://cdn.simpleicons.org/tanstack"
