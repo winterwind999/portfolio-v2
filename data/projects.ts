@@ -21,7 +21,7 @@ export const PROJECTS = (theme: Theme): Project[] => [
   {
     title: "Portfolio",
     description:
-      "A modern, interactive portfolio showcasing my work as a Software Engineer.",
+      "A modern, interactive portfolio showcasing my work as a Software Engineer",
     tools: [TYPESCRIPT, NEXTJS(theme), TAILWINDCSS, GOOGLE_GEMINI],
     links: [
       {
@@ -42,15 +42,15 @@ export const PROJECTS = (theme: Theme): Project[] => [
       },
     ],
     highlights: [
-      "Presents my tech stack, work experience, projects, resume, and personal background in a clean layout.",
-      "Integrated a custom AI chatbot using Google Gemini for interactive profile exploration.",
+      "Presents my tech stack, work experience, projects, resume, and personal background in a clean layout",
+      "Integrated a custom AI chatbot using Google Gemini for interactive profile exploration",
     ],
   },
 
   {
     title: "Matchy",
     description:
-      "Matchy is a full-stack dating application built to deliver a smooth, real-time, and secure user experience; from browsing profiles to chatting live.",
+      "Matchy is a full-stack dating application built to deliver a smooth, real-time, and secure user experience; from browsing profiles to chatting live",
     tools: [
       TYPESCRIPT,
       NEXTJS(theme),
@@ -96,7 +96,7 @@ export const PROJECTS = (theme: Theme): Project[] => [
   {
     title: "Web Application of Patient Workflow System",
     description:
-      "MediQueue is a Patient Workflow System is a system that includes both a mobile and web application. It aims to simplify and improve patient data processing and care delivery.",
+      "MediQueue is a Patient Workflow System is a system that includes both a mobile and web application. It aims to simplify and improve patient data processing and care delivery",
     tools: [REACT, REDUX, NODEJS, EXPRESSJS(theme), MONGODB],
     links: [],
     images: [
@@ -142,20 +142,20 @@ export const PROJECTS = (theme: Theme): Project[] => [
       },
     ],
     highlights: [
-      "Optimized database interactions using MongoDB aggregations, pagination, and efficient search capabilities.",
-      "Secured the app with JWT-based authentication, role-based access control, CORS, and request logging.",
-      "Implemented OTP-based recovery for email address and mobile number.",
-      "Automated deployments using CI/CD pipelines using GitHub Actions.",
-      "Designed a descriptive analytics module with Chart.js for data visualization and PDF/Excel report generation.",
-      "Created a cross-platform mobile app with Flutter frontend and Node.js, Express.js, and MongoDB backend.",
-      "Implemented real-time data synchronization using Socket.io for web and Server-Sent Events (SSE) for mobile application.",
+      "Optimized database interactions using MongoDB aggregations, pagination, and efficient search capabilities",
+      "Secured the app with JWT-based authentication, role-based access control, CORS, and request logging",
+      "Implemented OTP-based recovery for email address and mobile number",
+      "Automated deployments using CI/CD pipelines using GitHub Actions",
+      "Designed a descriptive analytics module with Chart.js for data visualization and PDF/Excel report generation",
+      "Created a cross-platform mobile app with Flutter frontend and Node.js, Express.js, and MongoDB backend",
+      "Implemented real-time data synchronization using Socket.io for web and Server-Sent Events (SSE) for mobile application",
     ],
   },
 
   {
     title: "Mobile Application of Patient Workflow System",
     description:
-      "MediQueue is a Patient Workflow System is a system that includes both a mobile and web application. It aims to simplify and improve patient data processing and care delivery.",
+      "MediQueue is a Patient Workflow System is a system that includes both a mobile and web application. It aims to simplify and improve patient data processing and care delivery",
     tools: [FLUTTER, NODEJS, EXPRESSJS(theme), MONGODB],
     links: [],
     images: [
@@ -185,9 +185,9 @@ export const PROJECTS = (theme: Theme): Project[] => [
       },
     ],
     highlights: [
-      "Implemented real-time data synchronization using Socket.io for web and Server-Sent Events (SSE) for mobile application.",
-      "Designed and developed modules such as book an appointment, book a specific doctor, tracking of queue, viewing of referral requests, tracking of test results sent, notifications, and profile.",
-      "Utilized shared preferences to maintain user's login state.",
+      "Implemented real-time data synchronization using Socket.io for web and Server-Sent Events (SSE) for mobile application",
+      "Designed and developed modules such as book an appointment, book a specific doctor, tracking of queue, viewing of referral requests, tracking of test results sent, notifications, and profile",
+      "Utilized shared preferences to maintain user's login state",
     ],
   },
 ];
