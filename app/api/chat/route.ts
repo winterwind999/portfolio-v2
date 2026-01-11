@@ -55,13 +55,7 @@ const PROFILE_CONTEXT = `
     Highlights:
     ${experience.highlights.map(
       (highlight) => `
-      Title: ${highlight.title} 
-      Descriptions:
-      ${highlight.descriptions.map(
-        (description) => `
-        - ${description}
-      `,
-      )}
+      - ${highlight}
     `,
     )}
   `,
