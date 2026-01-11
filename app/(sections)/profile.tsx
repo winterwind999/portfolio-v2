@@ -15,6 +15,7 @@ export default function Profile() {
   const phoneClipboard = useClipboard();
 
   const [isPhotoHovered, setIsPhotoHovered] = useState<boolean>(false);
+  const [isPhotoClicked, setIsPhotoClicked] = useState<boolean>(false);
 
   const handleEmailCopy = async () => {
     await emailClipboard.copy(EMAIL);
@@ -35,10 +36,23 @@ export default function Profile() {
     <div className="grid grid-cols-12 gap-3">
       <div
         className="col-span-5 md:col-span-2"
+        onClick={() => setIsPhotoClicked(true)}
         onMouseEnter={() => setIsPhotoHovered(true)}
-        onMouseLeave={() => setIsPhotoHovered(false)}
+        onMouseLeave={() => {
+          setIsPhotoHovered(false);
+          setIsPhotoClicked(false);
+        }}
       >
-        {isPhotoHovered ? (
+        {isPhotoClicked ? (
+          <Image
+            src="/assets/gear-5.webp"
+            alt="Jordan Faciol - Gear 5"
+            width={144}
+            height={144}
+            className="h-36 w-36 rounded-lg object-cover"
+            loading="lazy"
+          />
+        ) : isPhotoHovered ? (
           <Image
             src="/assets/gomu-gomu-no-boh.webp"
             alt="Jordan Faciol - Gomu Gomu no Boh"
