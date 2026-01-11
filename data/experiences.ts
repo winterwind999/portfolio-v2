@@ -5,22 +5,10 @@ export const EXPERIENCES: Experience[] = [
     startYear: 2025,
     endYear: 2025,
     highlights: [
-      {
-        title: "Medical Examination Management System",
-        descriptions: [
-          "A web-based system designed to streamline the management of APE, PEME, Executive, and Diagnostic medical examinations",
-          "Built with Typescript, React, Node.js, Express.js, MySQL, Tailwind CSS, TanStack Query, Axios, Zustand, REST API, and Socket.io",
-          "Key features include pre-filled PDF generation, CSV parsing, notifications, data analytics, a dynamic form builder, data versioning, file encryption/decryption, viewing and uploading to Cloudinary",
-        ],
-      },
-      {
-        title: "HR Portal",
-        descriptions: [
-          "A web application that enables HR staff to easily receive and view employees’ medical test results",
-          "Built with Typescript, React, Node.js, Express.js, MySQL, Tailwind CSS, TanStack Query, Axios, Zustand, and REST API",
-          "Supports secure viewing of uploaded medical documents and files stored in Cloudinary",
-        ],
-      },
+      "Developed Medical Examination Management System that reduced processing time of medical examination by at least 50% for APE, PEME, Executive, and Diagnostic workflows through a centralized web-based system",
+      "Implemented core features including pre-filled PDF generation, CSV parsing, notifications, data analytics, a dynamic form builder, data versioning, and secure file encryption/decryption with Cloudinary integration",
+      "Developed HR Portal that enables HR staff to easily receive and view employees’ medical test results",
+      "Utilized Typescript, React, Node.js, Express.js, MySQL, Tailwind CSS, TanStack Query, Axios, Zustand, REST API, and Socket.io to deliver scalable, real-time web applications"
     ],
   },
 ];

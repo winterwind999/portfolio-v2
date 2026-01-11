@@ -16,10 +16,7 @@ type Experience = {
   company: string;
   startYear: number;
   endYear: number;
-  highlights: {
-    title: string;
-    descriptions: string[];
-  }[];
+  highlights: string[];
 };
 
 // Projects

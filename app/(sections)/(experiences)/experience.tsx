@@ -27,14 +27,7 @@ export default function Experience({ experience }: Props) {
         <p className="text-sm">Highlights</p>
         <ul className="ml-6 list-disc">
           {experience.highlights.map((highlight) => (
-            <li key={highlight.title}>
-              <p>{highlight.title}</p>
-              <ul className="ml-6 list-disc">
-                {highlight.descriptions.map((description) => (
-                  <li key={description}>{description}</li>
-                ))}
-              </ul>
-            </li>
+            <li key={highlight}>{highlight}</li>
           ))}
         </ul>
       </CardContent>

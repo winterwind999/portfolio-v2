@@ -83,14 +83,10 @@ export const PROJECTS = (theme: Theme): Project[] => [
       },
     ],
     highlights: [
-      "Used React Server Components (RSC) for optimized data fetching, Server-Side Rendering (SSR) through Server Actions for secure mutations, and Client-Side Rendering (CSR) for interactive user interfaces",
-      "Backend developed using NestJS, MongoDB/Mongoose, Passport.js (JWT + Google OAuth), and Cloudinary",
-      "Implemented CSRF protection and CORS",
+      "Engineered a secure authentication system featuring Google OAuth and JWT via Passport.js, supplemented by CSRF protection and CORS",
       "Added real-time chats and notifications using WebSockets + Socket.IO",
-      "Includes Feeds module with swipe-style matchmaking",
       "Supports photo and album uploads with Cloudinary optimization",
-      "Fully Dockerized frontend & backend for dev and production",
-      "Automated CI/CD pipeline using GitHub Actions → Docker Hub → Render Deployment",
+      "Architected an automated CI/CD pipeline using GitHub Actions and Docker, streamlining containerized deployments from Docker Hub to Render",
     ],
   },
 
@@ -144,8 +140,7 @@ export const PROJECTS = (theme: Theme): Project[] => [
     ],
     highlights: [
       "Optimized database interactions using MongoDB aggregations, pagination, and efficient search capabilities",
-      "Secured the app with JWT-based authentication, role-based access control, CORS, and request logging",
-      "Implemented OTP-based recovery for email address and mobile number",
+      "Secured the platform using JWT-based authentication, Role-Based Access Control (RBAC), and OTP-based recovery for email and mobile numbers",
       "Automated deployments using CI/CD pipelines using GitHub Actions",
       "Designed a descriptive analytics module with Chart.js for data visualization and PDF/Excel report generation",
     ],
