@@ -183,8 +183,8 @@ export const CLOUDINARY: Tool = {
 };
 
 // AI
-export const CLAUDE_CODE: Tool = {
-  title: "Claude Code",
+export const CLAUDE: Tool = {
+  title: "Claude",
   icon: "https://cdn.simpleicons.org/claude",
 };
 

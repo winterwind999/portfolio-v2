@@ -3,7 +3,7 @@ import {
   AWS,
   AXIOS,
   CHATGPT,
-  CLAUDE_CODE,
+  CLAUDE,
   CLOUDINARY,
   CSS,
   DOCKER,
@@ -94,7 +94,7 @@ export const TOOLBOXES = (theme: Theme): Toolbox[] => [
 
   {
     title: "AI",
-    items: [CLAUDE_CODE, GOOGLE_GEMINI, CHATGPT(theme)],
+    items: [CLAUDE, GOOGLE_GEMINI, CHATGPT(theme)],
   },
 
   {
