@@ -235,6 +235,11 @@ export const JUNIT: Tool = {
   icon: "https://cdn.simpleicons.org/junit5",
 };
 
+export const PLAYWRIGHT: Tool = {
+  title: "Playwright",
+  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg",
+};
+
 export const FIGMA: Tool = {
   title: "Figma",
   icon: "https://cdn.simpleicons.org/figma",

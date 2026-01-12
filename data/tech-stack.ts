@@ -26,6 +26,7 @@ import {
   NEXTJS,
   NODEJS,
   OAUTH,
+  PLAYWRIGHT,
   POSTGRESQL,
   POSTMAN,
   REACT,
@@ -99,6 +100,15 @@ export const TOOLBOXES = (theme: Theme): Toolbox[] => [
 
   {
     title: "Developer Tools",
-    items: [GIT, GITHUB(theme), VSCODE, POSTMAN, JEST, JUNIT, FIGMA],
+    items: [
+      GIT,
+      GITHUB(theme),
+      VSCODE,
+      POSTMAN,
+      JEST,
+      JUNIT,
+      PLAYWRIGHT,
+      FIGMA,
+    ],
   },
 ];
