@@ -73,6 +73,8 @@ export default function ChatBot() {
 
       setMessages((prev) => [...prev, geminiMessage]);
     } catch (error) {
+      console.error("Chatbot API error:", error);
+
       setMessages((prev) => [
         ...prev,
         {

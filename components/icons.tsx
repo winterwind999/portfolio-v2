@@ -201,6 +201,32 @@ export const CHATGPT = (theme: Theme): Tool => ({
       : "https://img.icons8.com/?size=100&id=FBO05Dys9QCg&format=png&color=ffffff",
 });
 
+// TESTING & TOOLING
+export const JEST: Tool = {
+  title: "Jest",
+  icon: "https://cdn.simpleicons.org/jest",
+};
+
+export const JUNIT: Tool = {
+  title: "JUnit",
+  icon: "https://cdn.simpleicons.org/junit5",
+};
+
+export const PLAYWRIGHT: Tool = {
+  title: "Playwright",
+  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg",
+};
+
+export const ESLINT: Tool = {
+  title: "ESLint",
+  icon: "https://cdn.simpleicons.org/eslint",
+};
+
+export const SONARQUBE: Tool = {
+  title: "SonarQube",
+  icon: "https://cdn.simpleicons.org/sonarqubeserver",
+};
+
 // DEVELOPER TOOLS
 export const GIT: Tool = {
   title: "Git",
@@ -220,24 +246,17 @@ export const VSCODE: Tool = {
   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
 };
 
+export const INTELLIJ_IDEA = (theme: Theme): Tool => ({
+  title: "IntelliJ IDEA",
+  icon:
+    theme === "light"
+      ? "https://cdn.simpleicons.org/intellijidea"
+      : "https://cdn.simpleicons.org/intellijidea/fff",
+});
+
 export const POSTMAN: Tool = {
   title: "Postman",
   icon: "https://cdn.simpleicons.org/postman",
-};
-
-export const JEST: Tool = {
-  title: "Jest",
-  icon: "https://cdn.simpleicons.org/jest",
-};
-
-export const JUNIT: Tool = {
-  title: "JUnit",
-  icon: "https://cdn.simpleicons.org/junit5",
-};
-
-export const PLAYWRIGHT: Tool = {
-  title: "Playwright",
-  icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg",
 };
 
 export const FIGMA: Tool = {

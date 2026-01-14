@@ -40,10 +40,10 @@ const PROFILE_CONTEXT = `
 
   === TECH STACK ===
   Frontend: ${getTools("Frontend")}
-    Backend: ${getTools("Backend")}
-    DevOps & Cloud: ${getTools("DevOps & Cloud")}
-    AI Tools: ${getTools("AI")}
-    Developer Tools: ${getTools("Developer Tools")}
+  Backend: ${getTools("Backend")}
+  DevOps & Cloud: ${getTools("DevOps & Cloud")}
+  Testing & Tooling: ${getTools("Testing & Tooling")}
+  Developer Tools: ${getTools("Developer Tools")}
 
   === WORK EXPERIENCES ===
   ${EXPERIENCES.map(
@@ -128,7 +128,9 @@ export async function POST(request: Request) {
     });
 
     return NextResponse.json({ reply: response.text });
-  } catch (error: any) {
+  } catch (error: unknown) {
+    console.error("Gemini API error:", error);
+
     return NextResponse.json(
       {
         error: "UNKNOWN_ERROR",

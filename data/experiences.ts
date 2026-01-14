@@ -5,10 +5,10 @@ export const EXPERIENCES: Experience[] = [
     startYear: 2025,
     endYear: 2025,
     highlights: [
-      "Developed Medical Examination Management System that reduced processing time of medical examination by at least 50% for APE, PEME, Executive, and Diagnostic workflows through a centralized web-based system",
-      "Implemented core features including pre-filled PDF generation, CSV parsing, notifications, data analytics, a dynamic form builder, data versioning, and secure file encryption/decryption with Cloudinary integration",
-      "Developed HR Portal that enables HR staff to easily receive and view employees’ medical test results",
-      "Utilized Typescript, React, Node.js, Express.js, MySQL, Tailwind CSS, TanStack Query, Axios, Zustand, REST API, and Socket.io to deliver scalable, real-time web applications"
+      "Reduced medical examination processing time by 50% by building a centralized Medical Examination Management System supporting APE, PEME, Executive, and Diagnostic workflows.",
+      "Replaced manual and fragmented processes by delivering pre-filled PDF generation, CSV parsing, notifications, analytics, a dynamic form builder, and form data versioning.",
+      "Solved fragmented result access by developing an HR Portal that allows HR teams to securely receive and review employee medical results on one platform.",
+      "Built real time and scalable web applications using Typescript, React, Axios, TanStack Query, Zustand, Node.js, Express.js, MySQL, and Socket.io, ensuring responsive user experience and reliable data flow.",
     ],
   },
 ];

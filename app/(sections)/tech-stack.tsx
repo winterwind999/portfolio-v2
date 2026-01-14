@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { TOOLBOXES } from "@/data/tech-stack";
 import { FlaskConicalIcon } from "lucide-react";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function TechStack() {
@@ -15,7 +16,8 @@ export default function TechStack() {
   const toolboxes = TOOLBOXES(theme);
 
   useEffect(() => {
-    setMounted(true);
+    const mount = () => setMounted(true);
+    mount();
   }, []);
 
   if (!mounted) {
@@ -37,13 +39,14 @@ export default function TechStack() {
             <div className="flex flex-wrap gap-3">
               {toolbox.items.map((tool) => (
                 <Badge key={tool.title} variant="secondary" className="p-2">
-                  <img
+                  <Image
                     src={tool.icon}
                     alt={tool.title}
                     width={20}
                     height={20}
                     className="h-5 w-5"
                     loading="lazy"
+                    unoptimized
                   />
                   <p className="text-center">{tool.title}</p>
                 </Badge>

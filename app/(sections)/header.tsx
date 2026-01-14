@@ -18,7 +18,8 @@ export default function Header() {
   ];
 
   useEffect(() => {
-    setMounted(true);
+    const mount = () => setMounted(true);
+    mount();
   }, []);
 
   const scrollTo = (link: string) => {

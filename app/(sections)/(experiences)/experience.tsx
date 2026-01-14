@@ -5,7 +5,7 @@ type Props = {
   experience: Experience;
 };
 
-export default function Experience({ experience }: Props) {
+export default function Experience({ experience }: Readonly<Props>) {
   return (
     <Card>
       <CardHeader>

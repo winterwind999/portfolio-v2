@@ -21,8 +21,7 @@ import {
 export const PROJECTS = (theme: Theme): Project[] => [
   {
     title: "Portfolio",
-    description:
-      "A modern, interactive portfolio showcasing my work as a Software Engineer",
+    description: "A modern developer portfolio.",
     tools: [TYPESCRIPT, NEXTJS(theme), TAILWINDCSS, GOOGLE_GEMINI],
     links: [
       {
@@ -43,14 +42,14 @@ export const PROJECTS = (theme: Theme): Project[] => [
       },
     ],
     highlights: [
-      "Integrated a custom AI chatbot using Google Gemini for interactive profile exploration",
+      "Integrated a custom AI chatbot using Google Gemini to enable interactive exploration of experience and work.",
     ],
   },
 
   {
     title: "Matchy",
     description:
-      "A real time full stack dating application with secure live chat and matchmaking.",
+      "A full-stack, real-time dating application with live messaging and matchmaking.",
     tools: [
       TYPESCRIPT,
       NEXTJS(theme),
@@ -83,17 +82,15 @@ export const PROJECTS = (theme: Theme): Project[] => [
       },
     ],
     highlights: [
-      "Engineered a secure authentication system featuring Google OAuth and JWT via Passport.js, supplemented by CSRF protection and CORS",
-      "Added real-time chats and notifications using WebSockets + Socket.IO",
-      "Supports photo and album uploads with Cloudinary optimization",
-      "Architected an automated CI/CD pipeline using GitHub Actions and Docker, streamlining containerized deployments from Docker Hub to Render",
+      "Engineered a secure authentication system using Google OAuth and JWT with Passport.js, reinforced by CSRF protection and CORS to safeguard user sessions and personal data.",
+      "Automated deployment and delivery pipelines, reducing manual deployment effort and errors by implementing CI/CD with GitHub Actions, Docker, and containerized releases to Render.",
     ],
   },
 
   {
     title: "Web Application of Patient Workflow System",
     description:
-      "MediQueue is a Patient Workflow System that includes both a mobile and web application. It aims to simplify and improve patient data processing and care delivery",
+      "A full-stack, efficient patient data processing application to centralize patient workflows and improve overall system responsiveness.",
     tools: [REACT, REDUX, NODEJS, EXPRESSJS(theme), MONGODB],
     links: [],
     images: [
@@ -139,17 +136,16 @@ export const PROJECTS = (theme: Theme): Project[] => [
       },
     ],
     highlights: [
-      "Optimized database interactions using MongoDB aggregations, pagination, and efficient search capabilities",
-      "Secured the platform using JWT-based authentication, Role-Based Access Control (RBAC), and OTP-based recovery for email and mobile numbers",
-      "Automated deployments using CI/CD pipelines using GitHub Actions",
-      "Designed a descriptive analytics module with Chart.js for data visualization and PDF/Excel report generation",
+      "Optimized MongoDB aggregations and search patterns to speed up data handling, reducing query time and improving data retrieval efficiency.",
+      "Strengthened data security and access control through JWT authentication, RBAC, and OTP based account recovery for email and mobile users.",
+      "Enabled data-driven decision-making using analytics dashboards with automated PDF/Excel reports.",
+      "Automated testing and deployment using GitHub Actions for consistent and reliable releases.",
     ],
   },
 
   {
     title: "Mobile Application of Patient Workflow System",
-    description:
-      "MediQueue is a Patient Workflow System that includes both a mobile and web application. It aims to simplify and improve patient data processing and care delivery",
+    description: "A full-featured patient workflow mobile application.",
     tools: [FLUTTER, NODEJS, EXPRESSJS(theme), MONGODB],
     links: [],
     images: [
@@ -179,9 +175,9 @@ export const PROJECTS = (theme: Theme): Project[] => [
       },
     ],
     highlights: [
-      "Implemented real-time data synchronization using Socket.io for web and Server-Sent Events (SSE) for mobile application",
-      "Designed and developed modules such as book an appointment, book a specific doctor, tracking of queue, viewing of referral requests, tracking of test results sent, notifications, and profile",
-      "Utilized shared preferences to maintain user's login state",
+      "Implemented real-time data synchronization using Socket.io for web and SSE for mobile, ensuring consistent patient information across platforms.",
+      "Developed appointment, queue, referral, test result tracking, notification, and profile modules, improving patient engagement and streamlining care workflows.",
+      "Maintained seamless user experience by persisting login state with shared preferences, reducing repeated logins and improving usability.",
     ],
   },
 ];

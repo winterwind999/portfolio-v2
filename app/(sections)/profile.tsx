@@ -32,9 +32,29 @@ export default function Profile() {
     window.open(gmailUrl, "_blank", "noopener,noreferrer");
   };
 
+  const photoSrc = () => {
+    if (isPhotoClicked) {
+      return "/assets/gear-5.webp";
+    }
+    if (isPhotoHovered) {
+      return "/assets/gomu-gomu-no-boh.webp";
+    }
+    return "/assets/jordan-faciol.webp";
+  };
+
+  const photoAlt = () => {
+    if (isPhotoClicked) {
+      return "Jordan Faciol - Gear 5";
+    }
+    if (isPhotoHovered) {
+      return "Jordan Faciol - Gomu Gomu no Boh";
+    }
+    return "Jordan Faciol";
+  };
+
   return (
     <div className="grid grid-cols-12 gap-3">
-      <div
+      <button
         className="col-span-5 md:col-span-2"
         onClick={() => setIsPhotoClicked(true)}
         onMouseEnter={() => setIsPhotoHovered(true)}
@@ -43,49 +63,32 @@ export default function Profile() {
           setIsPhotoClicked(false);
         }}
       >
-        {isPhotoClicked ? (
-          <Image
-            src="/assets/gear-5.webp"
-            alt="Jordan Faciol - Gear 5"
-            width={144}
-            height={144}
-            className="h-36 w-36 rounded-lg object-cover"
-            loading="lazy"
-          />
-        ) : isPhotoHovered ? (
-          <Image
-            src="/assets/gomu-gomu-no-boh.webp"
-            alt="Jordan Faciol - Gomu Gomu no Boh"
-            width={144}
-            height={144}
-            className="h-36 w-36 rounded-lg object-cover"
-            loading="lazy"
-          />
-        ) : (
-          <Image
-            src="/assets/jordan-faciol.webp"
-            alt="Jordan Faciol"
-            width={144}
-            height={144}
-            className="h-36 w-36 rounded-lg object-cover"
-            loading="lazy"
-          />
-        )}
-      </div>
+        <Image
+          src={photoSrc()}
+          alt={photoAlt()}
+          width={144}
+          height={144}
+          className="h-36 w-36 rounded-lg object-cover"
+          loading="lazy"
+        />
+      </button>
 
       <div className="col-span-7 flex flex-col gap-1 md:col-span-10">
         <div className="flex items-center gap-2 text-2xl font-semibold">
           <p>Jordan Faciol</p>
-          <img
+          <Image
             src="https://img.icons8.com/color/48/verified-badge.png"
             alt="verified-badge"
-            className="size-4"
+            width={16}
+            height={16}
+            className="h-4 w-4"
+            loading="lazy"
           />
         </div>
 
         <p>Software Engineer</p>
 
-        <div
+        <button
           className="mb-2 flex cursor-pointer items-center gap-1 text-green-600 dark:text-green-400"
           onClick={handleReachOut}
         >
@@ -100,7 +103,7 @@ export default function Profile() {
               </div>
             </div>
           </div>
-        </div>
+        </button>
 
         <div className="flex flex-wrap items-center gap-3">
           <Button
