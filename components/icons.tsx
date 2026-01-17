@@ -224,7 +224,7 @@ export const ESLINT: Tool = {
 
 export const SONARQUBE: Tool = {
   title: "SonarQube",
-  icon: "https://cdn.simpleicons.org/sonarqubeserver",
+  icon: "https://cdn.simpleicons.org/sonarqubeforide",
 };
 
 // DEVELOPER TOOLS
