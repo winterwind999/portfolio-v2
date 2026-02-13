@@ -259,11 +259,6 @@ export const POSTMAN: Tool = {
   icon: "https://cdn.simpleicons.org/postman",
 };
 
-export const FIGMA: Tool = {
-  title: "Figma",
-  icon: "https://cdn.simpleicons.org/figma",
-};
-
 // MOBILE
 export const FLUTTER: Tool = {
   title: "Flutter",

@@ -7,7 +7,6 @@ import {
   DOCKER,
   ESLINT,
   EXPRESSJS,
-  FIGMA,
   GIT,
   GITHUB,
   GITHUB_ACTIONS,
@@ -100,6 +99,6 @@ export const TOOLBOXES = (theme: Theme): Toolbox[] => [
 
   {
     title: "Developer Tools",
-    items: [GIT, GITHUB(theme), VSCODE, INTELLIJ_IDEA(theme), POSTMAN, FIGMA],
+    items: [GIT, GITHUB(theme), VSCODE, INTELLIJ_IDEA(theme), POSTMAN],
   },
 ];
