@@ -65,9 +65,21 @@ export const PROJECTS = (theme: Theme): Project[] => [
       SOCKETIO(theme),
     ],
     links: [
-      { type: "github", title: "Frontend", link: "" },
-      { type: "github", title: "Backend", link: "" },
-      { type: "website", title: "Website", link: "" },
+      {
+        type: "github",
+        title: "Frontend",
+        link: "https://github.com/winterwind999/web_dating_app_frontend",
+      },
+      {
+        type: "github",
+        title: "Backend",
+        link: "https://github.com/winterwind999/web_dating_app_backend",
+      },
+      {
+        type: "website",
+        title: "Website",
+        link: "https://matchy-1uri.onrender.com",
+      },
     ],
     images: [
       {
