@@ -77,7 +77,7 @@ export const PROJECTS = (theme: Theme): Project[] => [
       },
       {
         type: "website",
-        title: "Website",
+        title: "https://matchy-1uri.onrender.com",
         link: "https://matchy-1uri.onrender.com",
       },
     ],
