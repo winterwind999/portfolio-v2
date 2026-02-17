@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PROJECTS } from "@/data/projects";
 import { FolderIcon } from "lucide-react";
