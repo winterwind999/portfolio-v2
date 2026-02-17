@@ -42,6 +42,9 @@ export const metadata: Metadata = {
     description:
       "Software Engineer specializing in Typescript, Node.js, NextJS, React, Next.js, Spring Boot, and modern web technologies.",
   },
+  verification: {
+    google: "C1fIzQvjRA7IR1S3eeTt1HlMdHSKh2ECQpWf6PBWATE",
+  },
 };
 
 export default function RootLayout({
