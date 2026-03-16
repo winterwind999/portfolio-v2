@@ -21,6 +21,7 @@ import {
 export const PROJECTS = (theme: Theme): Project[] => [
   {
     title: "Portfolio",
+    slug: "portfolio",
     description: "A modern developer portfolio.",
     tools: [TYPESCRIPT, NEXTJS(theme), TAILWINDCSS, GOOGLE_GEMINI],
     links: [
@@ -48,6 +49,7 @@ export const PROJECTS = (theme: Theme): Project[] => [
 
   {
     title: "Matchy",
+    slug: "matchy",
     description:
       "A full-stack, real-time dating application with live messaging and matchmaking.",
     tools: [
@@ -100,10 +102,11 @@ export const PROJECTS = (theme: Theme): Project[] => [
   },
 
   {
-    title: "Web Application of Patient Workflow System",
+    title: "Patient Workflow System",
+    slug: "patient-workflow-system",
     description:
       "A full-stack, efficient patient data processing application to centralize patient workflows and improve overall system responsiveness.",
-    tools: [REACT, REDUX, NODEJS, EXPRESSJS(theme), MONGODB],
+    tools: [REACT, REDUX, NODEJS, EXPRESSJS(theme), MONGODB, FLUTTER],
     links: [],
     images: [
       {
@@ -146,21 +149,6 @@ export const PROJECTS = (theme: Theme): Project[] => [
         title: "clinics",
         src: "/assets/projects/web-mediqueue/clinics.webp",
       },
-    ],
-    highlights: [
-      "Optimized MongoDB aggregations and search patterns to speed up data handling, reducing query time and improving data retrieval efficiency.",
-      "Strengthened data security and access control through JWT authentication, RBAC, and OTP based account recovery for email and mobile users.",
-      "Enabled data-driven decision-making using analytics dashboards with automated PDF/Excel reports.",
-      "Automated testing and deployment using GitHub Actions for consistent and reliable releases.",
-    ],
-  },
-
-  {
-    title: "Mobile Application of Patient Workflow System",
-    description: "A full-featured patient workflow mobile application.",
-    tools: [FLUTTER, NODEJS, EXPRESSJS(theme), MONGODB],
-    links: [],
-    images: [
       {
         title: "login",
         src: "/assets/projects/mobile-mediqueue/login.webp",
@@ -187,6 +175,10 @@ export const PROJECTS = (theme: Theme): Project[] => [
       },
     ],
     highlights: [
+      "Optimized MongoDB aggregations and search patterns to speed up data handling, reducing query time and improving data retrieval efficiency.",
+      "Strengthened data security and access control through JWT authentication, RBAC, and OTP based account recovery for email and mobile users.",
+      "Enabled data-driven decision-making using analytics dashboards with automated PDF/Excel reports.",
+      "Automated testing and deployment using GitHub Actions for consistent and reliable releases.",
       "Implemented real-time data synchronization using Socket.io for web and SSE for mobile, ensuring consistent patient information across platforms.",
       "Developed appointment, queue, referral, test result tracking, notification, and profile modules, improving patient engagement and streamlining care workflows.",
       "Maintained seamless user experience by persisting login state with shared preferences, reducing repeated logins and improving usability.",

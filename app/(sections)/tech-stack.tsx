@@ -3,9 +3,10 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { TOOLBOXES } from "@/data/tech-stack";
-import { FlaskConicalIcon } from "lucide-react";
+import { ChevronRightIcon, FlaskConicalIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function TechStack() {
@@ -27,10 +28,19 @@ export default function TechStack() {
   return (
     <Card id="tech-stack">
       <CardHeader>
-        <CardTitle className="flex items-center gap-1 text-lg">
-          <FlaskConicalIcon />
-          <p>Tech Stack</p>
-        </CardTitle>
+        <div className="flex items-center justify-between gap-3">
+          <CardTitle className="flex items-center gap-1 text-lg">
+            <FlaskConicalIcon />
+            <p>Tech Stack</p>
+          </CardTitle>
+          <Link
+            aria-label="view-all-tech-stack"
+            href="/tech-stack"
+            className="flex items-center gap-1 text-xs hover:underline hover:underline-offset-4"
+          >
+            View All <ChevronRightIcon className="size-4" />
+          </Link>
+        </div>
       </CardHeader>
       <CardContent className="flex flex-col gap-2">
         {toolboxes.map((toolbox) => (

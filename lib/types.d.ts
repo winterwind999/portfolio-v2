@@ -22,11 +22,19 @@ type Experience = {
 // Projects
 type Project = {
   title: string;
+  slug: string;
   description: string;
   tools: Tool[];
   links: { type: "github" | "website"; title: string; link: string }[];
   images: { title: string; src: string }[];
   highlights: string[];
+};
+
+// Certifications
+type Certification = {
+  title: string;
+  organization: string;
+  description: string[];
 };
 
 // ChatBot

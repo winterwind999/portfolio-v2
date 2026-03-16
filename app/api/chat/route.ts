@@ -1,5 +1,6 @@
 "use server";
 
+import { CERTIFICATIONS } from "@/data/certifications";
 import { EXPERIENCES } from "@/data/experiences";
 import { PROJECTS } from "@/data/projects";
 import { TOOLBOXES } from "@/data/tech-stack";
@@ -82,6 +83,20 @@ const PROFILE_CONTEXT = `
     ${project.highlights.map(
       (highlight) => `
       - ${highlight}
+    `,
+    )}
+  `,
+  )}
+
+  === CERTIFICATIONS ===
+  ${CERTIFICATIONS.map(
+    (certification) => `
+    Title: ${certification.title}
+    Organization: ${certification.organization}
+    Description:
+    ${certification.description.map(
+      (desc) => `
+      - ${desc}
     `,
     )}
   `,

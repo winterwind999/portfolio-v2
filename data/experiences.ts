@@ -1,6 +1,6 @@
 export const EXPERIENCES: Experience[] = [
   {
-    title: "Full Stack Developer (Intern)",
+    title: "Full Stack Developer",
     company: "Clinica Manila",
     startYear: 2025,
     endYear: 2025,

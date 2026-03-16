@@ -24,7 +24,6 @@ import {
   NEXTJS,
   NODEJS,
   OAUTH,
-  PLAYWRIGHT,
   POSTGRESQL,
   POSTMAN,
   REACT,
@@ -43,6 +42,29 @@ import {
 } from "@/components/icons";
 
 export const TOOLBOXES = (theme: Theme): Toolbox[] => [
+  {
+    title: "",
+    items: [
+      TYPESCRIPT,
+      REACT,
+      NEXTJS(theme),
+      NODEJS,
+      EXPRESSJS(theme),
+      NESTJS,
+      JAVA,
+      SPRING_BOOT,
+      MONGODB,
+      MYSQL,
+      POSTGRESQL,
+      AWS,
+      DOCKER,
+      RENDER(theme),
+      VERCEL(theme),
+    ],
+  },
+];
+
+export const ALL_TOOLBOXES = (theme: Theme): Toolbox[] => [
   {
     title: "Frontend",
     items: [
@@ -94,7 +116,7 @@ export const TOOLBOXES = (theme: Theme): Toolbox[] => [
 
   {
     title: "Testing & Tooling",
-    items: [JEST, JUNIT, PLAYWRIGHT, ESLINT, SONARQUBE],
+    items: [JEST, JUNIT, ESLINT, SONARQUBE],
   },
 
   {

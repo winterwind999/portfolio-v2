@@ -2,6 +2,7 @@ import ChatBot from "@/components/chatbot";
 import FloatingActionButton from "@/components/floating-action-button";
 import Map from "@/components/map";
 import { MotionContainer, MotionItem } from "@/components/motion-wrapper";
+import Certifications from "./(sections)/(certifications)/certifications";
 import Experiences from "./(sections)/(experiences)/experiences";
 import Projects from "./(sections)/(projects)/projects";
 import AboutMe from "./(sections)/about-me";
@@ -11,7 +12,7 @@ import Profile from "./(sections)/profile";
 import TechStack from "./(sections)/tech-stack";
 import Timeline from "./(sections)/timeline";
 
-export default function Page() {
+export default function HomePage() {
   return (
     <div className="m-3 flex min-h-dvh justify-center">
       <MotionContainer className="flex flex-col gap-3 md:m-0 md:w-1/2">
@@ -44,8 +45,17 @@ export default function Page() {
           <Experiences />
         </MotionItem>
 
-        <MotionItem>
+        {/* <MotionItem>
           <Projects />
+        </MotionItem> */}
+
+        <MotionItem className="grid grid-cols-1 gap-3 lg:grid-cols-6">
+          <div className="lg:col-span-4">
+            <Projects />
+          </div>
+          <div className="lg:col-span-2">
+            <Certifications />
+          </div>
         </MotionItem>
 
         <MotionItem>

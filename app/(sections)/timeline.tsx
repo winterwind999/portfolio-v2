@@ -9,7 +9,7 @@ import { useState } from "react";
 
 const TIMELINE: Path[] = [
   {
-    title: "Full Stack Developer (Intern)",
+    title: "Full Stack Developer",
     company: "Clinica Manila",
     year: "2025",
   },

@@ -7,7 +7,7 @@ type Props = {
 
 export default function Experience({ experience }: Readonly<Props>) {
   return (
-    <Card>
+    <Card className="hover:ring-primary/20 hover:ring">
       <CardHeader>
         <div>
           <div className="flex items-center justify-between gap-3">
