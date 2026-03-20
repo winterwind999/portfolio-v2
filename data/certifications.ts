@@ -5,6 +5,7 @@ export const CERTIFICATIONS: Certification[] = [
     description: [
       "Full Stack Development",
       "React",
+      "TDD",
       "Spring Fundamentals",
       "Spring MVC Fundamentals",
       "Spring JPA/Hibernate Fundamentals",
