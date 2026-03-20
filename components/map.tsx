@@ -13,14 +13,14 @@ export default function Map() {
 
   const mapContainer = useRef<HTMLDivElement | null>(null);
 
-  const markerLngLat: [number, number] = [
-    121.03772612886411, 14.671060795700212,
-  ];
-
   useEffect(() => {
     if (!mapContainer.current) {
       return;
     }
+
+    const markerLngLat: [number, number] = [
+      121.03772612886411, 14.671060795700212,
+    ];
 
     const map = new maplibregl.Map({
       container: mapContainer.current,
@@ -72,7 +72,7 @@ export default function Map() {
             style={{ WebkitBackdropFilter: "blur(20px)" }}
           >
             <Image
-              src="/assets/quezon-city.webp"
+              src="/assets/circle-c.webp"
               alt="location"
               width={32}
               height={32}
